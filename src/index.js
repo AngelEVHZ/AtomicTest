@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Route, Redirect, Switch } from 'react-router-dom';
-import './index.css';
-import Home from './pages/home/Home';
-import Register from './pages/register/Register';
+import Home from './pages/home/home';
+import Register from './pages/register/register';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Root = (
   <BrowserRouter>

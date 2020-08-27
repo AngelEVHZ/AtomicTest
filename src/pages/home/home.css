@@ -1,0 +1,17 @@
+.back-ground {
+  background-image: url('../../imgs/Mask-Group-2x.png'); 
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  background-position: center center;
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.text-large {
+  font-size: 65px;
+}
+
+.text-orange{
+  color: #FA4D09;
+}
