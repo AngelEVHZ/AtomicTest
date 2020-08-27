@@ -1,0 +1,51 @@
+
+.primary {
+  border-radius: 10px !important;
+  height: 550px;
+  background-color: #FA4D09 !important;
+  z-index: 10;
+  box-shadow: 0 2rem 3rem rgba(0,0,0,0.4)!important;
+}
+.secondary {
+  border-radius: 10px !important;
+  height: 450px;
+  width: 350px;
+}
+
+.card-left{
+  position: relative !important;
+  right: -20px !important;
+}
+
+.card-right{
+  position: relative;
+  left: -20px;
+}
+
+.text-title {
+  font-size: 35px;
+}
+
+.text-list{
+  font-size: 25px;
+  line-height: normal;
+}
+
+.text-black{
+  color:black;
+}
+
+hr {
+  margin-left: 0;
+  margin-right: 0; 
+  border-top: 1.5px solid !important;
+  border-bottom: 1.5px solid !important;
+  border-radius: 25px !important;
+}
+
+.large{
+  width: 50px;
+}
+.short{
+  width: 10px;
+}
