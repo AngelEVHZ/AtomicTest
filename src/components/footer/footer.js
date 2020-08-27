@@ -1,9 +1,18 @@
 
 
 import React from 'react';
-export default function Footer(){
+import './footer.css';
+export default function Footer() {
   return (
-    <footer class="wrapper_footer ">
+    <footer class="black">
+      <div className="row">
+        <div className="col">
+          contenido
+        </div>
+        <div className="col">
+          contenido
+        </div>
+      </div>
     </footer>
   )
 };

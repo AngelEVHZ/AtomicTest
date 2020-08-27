@@ -14,9 +14,9 @@ export default class Home extends React.Component {
   render() {
     return (
       <div>
-        <div className="back-ground">
+      
+          <section className="wrapper-section-1 py-3">
           <Header></Header>
-          <section>
             <div className="container-fluid">
               <div className="row">
                 <div className="col-lg-6 col-md-12 " >
@@ -44,8 +44,9 @@ export default class Home extends React.Component {
               </div>
             </div>
           </section>
+          
+          <section className="wrapper-section-2">
           <br /><br /><br />  <br /><br /><br />
-          <section>
             <div className="container-fluid">
               <div className="row">
                 <div className="col-12 d-flex justify-content-center ">
@@ -57,15 +58,12 @@ export default class Home extends React.Component {
                   </div>
                 </div>
               </div>
-
             <Cards></Cards>
-
             </div>
           </section>
 
           <br /><br /><br />  <br /><br /><br />
           <Footer></Footer>
-        </div>
       </div>);
   }
 }

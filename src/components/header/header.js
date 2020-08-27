@@ -4,7 +4,7 @@ import './header.css';
 export default function Header() {
   return (
     <div className="container-fluid">
-      <nav className="navbar  mt-3 ml-5">
+      <nav className="navbar  mt-3 ml-5 mt-0">
         <a className="navbar-brand" >
           <img src={logo} id="logo" />
         </a>
