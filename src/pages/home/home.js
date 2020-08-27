@@ -24,11 +24,11 @@ export default class Home extends React.Component {
                 </div>
                 <div className="col-lg-6 col-md-12  d-flex align-items-center ">
                   <div className="text-center">
-                    <div class="text-white font">
-                      <h1 class="text-large font-weight-bold mb-0"> Desarrolla todo</h1>
-                      <h1 class="text-large font-weight-bold text-orange mb-0">tu POTENCIAL</h1>
-                      <h1 class="text-large font-weight-bold mb-0">dentro del equipo</h1>
-                      <h1 class="text-large font-weight-bold mb-0"><span className="text-orange">ATOMIC</span>LABS</h1>
+                    <div className="text-white font">
+                      <h1 className="text-large font-weight-bold mb-0"> Desarrolla todo</h1>
+                      <h1 className="text-large font-weight-bold text-orange mb-0">tu POTENCIAL</h1>
+                      <h1 className="text-large font-weight-bold mb-0">dentro del equipo</h1>
+                      <h1 className="text-large font-weight-bold mb-0"><span className="text-orange">ATOMIC</span>LABS</h1>
                     </div>
                     <div className="py-4">
                       <RegisterButtonLink></RegisterButtonLink>
@@ -51,8 +51,8 @@ export default class Home extends React.Component {
               <div className="row">
                 <div className="col-12 d-flex justify-content-center ">
                   <div className="text-center">
-                    <div class="text-white font">
-                      <h1 class="text-medium font-weight-bold mb-0">SOMOS EL BRAZO DERECHO</h1>
+                    <div className="text-white font">
+                      <h1 className="text-medium font-weight-bold mb-0">SOMOS EL BRAZO DERECHO</h1>
                       <h1 className="text-medium font-weight-bold mb-0 mt-0 text-orange">DE LA TECNOLOGÍA</h1>
                     </div>
                   </div>
@@ -61,8 +61,6 @@ export default class Home extends React.Component {
             <Cards></Cards>
             </div>
           </section>
-
-          <br /><br /><br />  <br /><br /><br />
           <Footer></Footer>
       </div>);
   }

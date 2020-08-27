@@ -6,6 +6,10 @@
   font-size: 50px;
 }
 
+.text-small {
+  font-size: 20px;
+}
+
 .text-orange{
   color: #FA4D09;
 }
