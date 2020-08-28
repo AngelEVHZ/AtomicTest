@@ -1,7 +1,7 @@
 
 ## Instrucciones para correr la aplicación:
 
-En la carpeta raíz del proyecto (AtomicTest/):
+En la carpeta raíz del proyecto:
 
 * Instalar las dependencias con el comando: `npm install`.
 
