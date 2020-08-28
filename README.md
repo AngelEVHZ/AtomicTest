@@ -1,11 +1,11 @@
 
 ## Instrucciones para correr la aplicación:
 
-In the project directory, you can run:
+En la carpeta raíz del proyecto (AtomicTest/):
 
 * Instalar las dependencias con el comando: `npm install`.
 
-* Para iniciar la aplicación ejecutar el comando: `npm start`
+* Iniciar la aplicación ejecutando el comando: `npm start`.
 
 * Abrir [http://localhost:3000](http://localhost:3000) para visualizar la aplicación en el navegador.
 
