@@ -22,15 +22,12 @@ export default class Register extends React.Component {
     }
   }
 
-
-
   nextSection = (data) => {
     if (data) {
       this.setState({
         ...data
       })
     }
-
     let progress = this.state.progress;
     if (progress <= 2) progress++;
     this.setState({ progress });
@@ -39,6 +36,7 @@ export default class Register extends React.Component {
   endForm = () => {
     this.props.history.push("/home");
   }
+
   previewSection = () => {
     let progress = this.state.progress;
     if (progress > 0) progress--;
