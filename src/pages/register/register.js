@@ -15,16 +15,30 @@ export default class Register extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      name: '',
+      lastName: '',
+      phone: '',
       progress: 0,
     }
   }
 
-  nextSection = () => {
+
+
+  nextSection = (data) => {
+    if (data) {
+      this.setState({
+        ...data
+      })
+    }
+
     let progress = this.state.progress;
     if (progress <= 2) progress++;
     this.setState({ progress });
   }
 
+  endForm = () => {
+    this.props.history.push("/home");
+  }
   previewSection = () => {
     let progress = this.state.progress;
     if (progress > 0) progress--;
@@ -45,10 +59,10 @@ export default class Register extends React.Component {
         section = <PhoneSection {...sectionProps} />
         break
       case 2:
-        section = <VerificationCodeSection {...sectionProps} />
+        section = <VerificationCodeSection {...sectionProps} phone={this.state.phone} />
         break
       case 3:
-        section = <TermsSection {...sectionProps} />
+        section = <TermsSection nextSection={this.endForm} />
         break
     }
     return section;

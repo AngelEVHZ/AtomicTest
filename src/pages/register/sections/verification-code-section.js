@@ -11,6 +11,7 @@ export default class VerificationCodeSection extends React.Component {
   }
 
   render() {
+    const {phone} = this.props;
     return (
       <div>
         <div className="row">
@@ -24,7 +25,7 @@ export default class VerificationCodeSection extends React.Component {
         <div className="row mt-5">
           <div className="col">
             <h3 className="text-white ">Te enviamos un SMS al número:</h3>
-            <h4 className="text-white ">+52 56 1257 6780</h4>
+            <h4 className="text-white ">+52 {phone}</h4>
           </div>
         </div>
         <div className="row mt-5">

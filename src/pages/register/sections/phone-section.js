@@ -10,7 +10,25 @@ export default class PhoneSection extends React.Component {
     }
   }
 
+
+  nextSection = () =>{
+    const phone = this.state.phone;
+    this.props.nextSection({phone});
+  }
+
+
+  handleInputChange = (event) => {
+    const target = event.target;
+    const value = target.value;
+    const name = target.name || target.id;
+    if (value.length > 10)return;
+    this.setState({
+      [name]: value,
+    });
+  }
+
   render() {
+    const formValid = this.state.phone.length === 10;
     return (
       <div>
         <div className="row">
@@ -32,7 +50,10 @@ export default class PhoneSection extends React.Component {
             <form>
               <div class="form-group">
                 <label for="phone" className="h3 text-white">Número de celular</label>
-                <input type="text" class="form-control form-control-lg" id="phone" />
+                <input type="number" class="form-control form-control-lg" id="phone"
+                maxlength="10"
+                 value={this.state.phone} onChange={this.handleInputChange}
+                />
               </div>
             </form>
           </div>
@@ -42,7 +63,8 @@ export default class PhoneSection extends React.Component {
             <GenericRoundedButton
               btnColor={"#FA4D09"}
               textColor={"white"}
-              callBack={this.props.nextSection}>
+              disabled={!formValid}
+              callBack={this.nextSection}>
               Continuar
             </GenericRoundedButton>
           </div>

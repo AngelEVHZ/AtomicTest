@@ -1,16 +1,23 @@
 import React from 'react';
 import Title from "../../../components/title/title";
 import circleImage from "../../../imgs/Group 4025.png";
+import { Link } from "react-router-dom";
 import GenericRoundedButton from "../../../components/generic-rounded-button/generic-rounded-button";
 export default class TermsSection extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      check: false,
+      terms: false,
     }
+  }
+  handleCheck = () => {
+    this.setState({
+      terms: !this.state.terms
+    });
   }
 
   render() {
+    const formValid = this.state.terms;
     return (
       <div>
         <div className="row">
@@ -28,12 +35,13 @@ export default class TermsSection extends React.Component {
         </div>
         <div className="row mt-3">
           <div className="col-8">
-          <a href="#" for="code" className="text-small text-white ">Consulta Términos y Condiciones</a>
+            <a href="#" for="code" className="text-small text-white ">Consulta Términos y Condiciones</a>
             <form>
               <div class="custom-control custom-checkbox mt-5">
-                <input type="checkbox" class="custom-control-input" id="check" />
-                  <label className="custom-control-label text-white text-small" for="check">Acepto los Términos y Condiciones</label>
-                </div>
+                <input type="checkbox" class="custom-control-input" id="terms"
+                  onChange={this.handleCheck} />
+                <label className="custom-control-label text-white text-small" for="terms">Acepto los Términos y Condiciones</label>
+              </div>
             </form>
           </div>
         </div>
@@ -42,7 +50,8 @@ export default class TermsSection extends React.Component {
             <GenericRoundedButton
               btnColor={"#FA4D09"}
               textColor={"white"}
-              callBack={this.props.nextSection}>
+              callBack={this.props.nextSection}
+              disabled={!formValid}>
               Enviar
             </GenericRoundedButton>
           </div>
