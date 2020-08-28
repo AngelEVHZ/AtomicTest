@@ -1,12 +1,12 @@
 import React from 'react';
 import Title from "../../../components/title/title";
-import circleImage from "../../../imgs/Group 4024.png";
+import circleImage from "../../../imgs/Group 4025.png";
 import GenericRoundedButton from "../../../components/generic-rounded-button/generic-rounded-button";
-export default class VerificationCodeSection extends React.Component {
+export default class TermsSection extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      code: "",
+      check: false,
     }
   }
 
@@ -18,23 +18,22 @@ export default class VerificationCodeSection extends React.Component {
             <img src={circleImage} />
           </div>
           <div className="col-11  align-self-center  d-flex justify-content-start">
-            <Title text={"Código de"} subText={"Verificación"} inline={true}></Title>
+            <Title text={"Términos y"} subText={"Condiciones"} inline={true}></Title>
           </div>
         </div>
         <div className="row mt-5">
           <div className="col">
-            <h3 className="text-white ">Te enviamos un SMS al número:</h3>
-            <h4 className="text-white ">+52 56 1257 6780</h4>
+            <h4 className="text-white ">Por favor revisa nuestros términos y condiciones para este servicio:</h4>
           </div>
         </div>
-        <div className="row mt-5">
+        <div className="row mt-3">
           <div className="col-8">
-            <label for="code" className="h4 text-white mb-4">Ingresa el código de verificación:</label>
+          <a href="#" for="code" className="text-small text-white ">Consulta Términos y Condiciones</a>
             <form>
-              <div class="form-group">
-                <label for="code" className=" text-white">Código de verificación</label>
-                <input type="text" class="form-control form-control-lg" id="code" />
-              </div>
+              <div class="custom-control custom-checkbox mt-5">
+                <input type="checkbox" class="custom-control-input" id="check" />
+                  <label className="custom-control-label text-white text-small" for="check">Acepto los Términos y Condiciones</label>
+                </div>
             </form>
           </div>
         </div>
@@ -44,7 +43,7 @@ export default class VerificationCodeSection extends React.Component {
               btnColor={"#FA4D09"}
               textColor={"white"}
               callBack={this.props.nextSection}>
-              Continuar
+              Enviar
             </GenericRoundedButton>
           </div>
         </div>

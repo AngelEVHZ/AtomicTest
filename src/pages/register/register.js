@@ -7,9 +7,8 @@ import BackButton from "../../components/back-button/back-button";
 import UserInfoSection from "./sections/user-info-section";
 import PhoneSection from "./sections/phone-section";
 import VerificationCodeSection from "./sections/verification-code-section";
-
-import image from '../../imgs/Group-4033.png';
-
+import TermsSection from "./sections/tems-section";
+import ImageSection from "./sections/image-section";
 import "./register.css";
 import '../../styles.css';
 export default class Register extends React.Component {
@@ -43,13 +42,13 @@ export default class Register extends React.Component {
         section = <UserInfoSection {...sectionProps} />
         break
       case 1:
-        section = <PhoneSection {...sectionProps}/>
+        section = <PhoneSection {...sectionProps} />
         break
       case 2:
-        section = <VerificationCodeSection {...sectionProps}/>
+        section = <VerificationCodeSection {...sectionProps} />
         break
       case 3:
-        section = <div></div>
+        section = <TermsSection {...sectionProps} />
         break
     }
     return section;
@@ -73,7 +72,7 @@ export default class Register extends React.Component {
                 {this.renderSection()}
               </div>
               <div className="col-4">
-                <img src={image} />
+                <ImageSection progress={progress} />
               </div>
             </div>
           </div>
