@@ -2,3 +2,8 @@
   height: auto;
   width: 200px;
 }
+
+.header{
+  position: absolute;
+  z-index: 10;
+}
