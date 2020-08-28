@@ -1,7 +1,8 @@
 import React from 'react';
 import '../../styles.css';
 import './time-line.css';
-import Arrow from '../../imgs/arrow.png';
+import {BsArrowRight} from 'react-icons/bs';
+
 export default function TimeLine() {
   return (
     <div className="container">
@@ -10,19 +11,19 @@ export default function TimeLine() {
           Contratación remota
       </div>
         <div className="col-1">
-          <img src={Arrow}></img>
+        <BsArrowRight className="arrow text-orange" />
         </div>
         <div className="col-2">
           Entrevista con el área de RH
       </div>
         <div className="col-1">
-          <img src={Arrow}></img>
+        <BsArrowRight className="arrow text-orange" />
         </div>
         <div className="col-2">
           Prueba práctica
       </div>
         <div className="col-1">
-          <img src={Arrow}></img>
+        <BsArrowRight className="arrow text-orange" />
         </div>
         <div className="col-2">
           Entrevista técnica

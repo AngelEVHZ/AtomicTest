@@ -16,7 +16,7 @@ export default class Home extends React.Component {
         <WelcomeSection></WelcomeSection>
         <AboutUsSection></AboutUsSection>
         <JoinUsSection></JoinUsSection>
-        <AtomicInfoSection></AtomicInfoSection>
+        {/* <AtomicInfoSection></AtomicInfoSection> */}
         <Footer></Footer>
       </div>);
   }
