@@ -10,6 +10,6 @@ export default function CircleSectionImage(props) {
     showImage = checked;
   }
   return (
-    <img src={showImage} className="circle" style={{ left: percentage }} />
+    <img src={showImage} className="circle" style={{ left: percentage+'%' }} />
   )
 };

@@ -51,7 +51,6 @@ export default class PhoneSection extends React.Component {
               <div class="form-group">
                 <label for="phone" className="h3 text-white">Número de celular</label>
                 <input type="number" class="form-control form-control-lg" id="phone"
-                maxlength="10"
                  value={this.state.phone} onChange={this.handleInputChange}
                 />
               </div>

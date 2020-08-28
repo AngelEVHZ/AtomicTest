@@ -2,42 +2,47 @@ import React from 'react';
 import './progress-bar.css';
 import CircleSectionImage from "./circle-section-image";
 
-import imgF1 from "../../imgs/Group 4014.png";
+import successImage1 from "../../imgs/Group 4014.png";
+
 import img2 from "../../imgs/Group 4019.png";
-import imgF2 from "../../imgs/Group 4023.png";
+import focusImage2 from "../../imgs/Group 4020.png";
+
 import img3 from "../../imgs/Group 4017.png";
-import imgF3 from "../../imgs/Group 4024.png";
+import focusImage3 from "../../imgs/Group 4021.png";
+
 import img4 from "../../imgs/Group 4018.png";
-import imgF4 from "../../imgs/Group 4025.png";
-import checked from "../../imgs/Group 4016.png";
+import focusImage4 from "../../imgs/Group 4022.png";
+
+import checkedImage from "../../imgs/Group 4016.png";
+
 const sources = [
   {
     targetProgress: 0,
-    percentage: "20%",
-    focusImage: imgF1,
-    image: imgF1,
-    checked
+    percentage: 15,
+    focusImage: successImage1,
+    image: successImage1,
+    checked: checkedImage
   },
   {
     targetProgress: 1,
-    percentage: "40%",
-    focusImage: imgF2,
+    percentage: 35,
+    focusImage: focusImage2,
     image: img2,
-    checked
+    checked: checkedImage
   },
   {
     targetProgress: 2,
-    percentage: "60%",
-    focusImage: imgF3,
+    percentage: 55,
+    focusImage: focusImage3,
     image: img3,
-    checked
+    checked: checkedImage
   },
   {
     targetProgress: 3,
-    percentage: "80%",
-    focusImage: imgF4,
+    percentage: 75,
+    focusImage: focusImage4,
     image: img4,
-    checked
+    checked: checkedImage
   }
 ];
 
@@ -64,11 +69,11 @@ export default class ProgressBar extends React.Component {
   render() {
     const { progress } = this.props;
     const style = {
-      width: ((progress + 1) * 25) + "%",
+      width: (sources[progress].percentage+(4*progress)) + "%",
     };
     return (
       <div>
-        {sources.map( (source,index) => {
+        {sources.map((source, index) => {
           return <CircleSectionImage {...source} currentProgress={progress} key={index.toString()} />
         })
         }
