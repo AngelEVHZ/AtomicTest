@@ -13,3 +13,12 @@
 .text-orange{
   color: #FA4D09;
 }
+
+.icon-small{
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.pointer {
+  cursor: pointer;
+}
