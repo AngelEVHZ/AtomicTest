@@ -1,0 +1,16 @@
+.bar {
+  border-radius: 0px 30px 30px 0px !important;
+  background-color: #FA4D09 !important;
+}
+
+.back-bar{
+  border-radius: 30px !important;
+  
+}
+
+.circle {
+  position: relative;
+  top:-10px;
+  width: 35px;
+  height: auto;
+}
