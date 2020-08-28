@@ -1,14 +1,16 @@
 
 .wrapper-section-1 {
-  background:  url('../../imgs/Mask-Group-2x.png') no-repeat right bottom;
-  background-attachment: fixed;
   padding: 9rem 0 7rem;
-  background-position: center center;
+  background-image:
+  linear-gradient(to bottom, rgba(245, 246, 252, 0), #051542),
+  url('../../imgs/Mask-Group-2x.png');
   width: 100%;
+  background-position: center center;
+  color: white;
   height: 100vh;
 }
 
 .wrapper-section-2 {
-  background: #05184b;
+  background: #051542;
   padding: 4rem 0 5rem;
 }

@@ -62,7 +62,7 @@ export default class Register extends React.Component {
         <Section className="wrapper-section-1">
           <div className="container-fluid m-5">
             <div className="row">
-              <div className="col-8">
+              <div className="col-lg-8 col-md-12">
                 <ProgressBar progress={progress}></ProgressBar>
                 <div className="row back-button-div">
                   <div className="col my-3">
@@ -71,12 +71,11 @@ export default class Register extends React.Component {
                 </div>
                 {this.renderSection()}
               </div>
-              <div className="col-4">
+              <div className="col-lg-4 col-md-12">
                 <ImageSection progress={progress} />
               </div>
             </div>
           </div>
-
         </Section>
         <Footer></Footer>
       </div>

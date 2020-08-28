@@ -44,7 +44,9 @@ const cardProps = [
 
 export default function Cards() {
   return (
-    <div className="row py-5">
+    <div className="row py-5  d-flex justify-content-center">
+      <div className="col-10">
+      <div className="row">
       <div className="col-4 align-self-center d-flex justify-content-end p-0 card-left">
         <Card {...cardProps[0]}>
           <ul>
@@ -54,7 +56,7 @@ export default function Cards() {
           </ul>
         </Card>
       </div>
-      <div className="col-4 align-self-center">
+      <div className="col-4 align-self-center d-flex justify-content-center">
         <Card {...cardProps[1]} >
           <ul>
             <li className="pb-2"><b>Estrategia</b> Digital  </li>
@@ -72,6 +74,8 @@ export default function Cards() {
             <li className="pb-2"><b>Servicios de la Nube</b></li>
           </ul>
         </Card>
+      </div>
+      </div>
       </div>
     </div>
   )
